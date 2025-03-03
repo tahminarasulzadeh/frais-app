@@ -10,7 +10,7 @@ export default function NaturallySimple() {
             <div className="flex  justify-center gap-[10px] items-center flex-col">
                 <h1 className="font-thin  text-[26px] md:text-[52px] text-black text-center">NATURALLY SIMPLE</h1>
                 <p className="font-thin md:w-[650px] w-[325px] text:md md:text-lg text-black text-center">
-                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                    I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I&apos;m a great place for you to tell a story and let your users know a little more about you.
                 </p>
                 <Link href=  "  http://localhost:3000/history" className=" py-2 px-3 mt-3 border-[1px] bg-white border-black hover:text-white hover:bg-[#5E5E4A] transition-all duration-500 ease-in">
                     Our Story

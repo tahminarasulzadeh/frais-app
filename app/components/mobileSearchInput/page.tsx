@@ -4,6 +4,7 @@
 import { useEffect, useRef, useState, useMemo } from "react";
 import { CiSearch } from "react-icons/ci";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Product {
     _id: number;
@@ -82,7 +83,7 @@ const MobileSearchInput: React.FC<MobileMenuProps> = ({ click }) => {
                         className="py-2 px-4 border-b last:border-b-0 hover:bg-gray-100 flex items-center gap-4"
                         onClick={click}
                     >
-                        <img
+                        <Image
                             src={`http://localhost:5001${product.image}`}
                             alt={product.name}
                             className="w-[40px] h-[30px] object-cover"

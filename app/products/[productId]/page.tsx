@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import Image from 'next/image';
 
 
 
@@ -57,7 +58,7 @@ export default function ProductDetails({ params }: { params: Promise<{ productId
     <div className="p-4 ">
       <div className="flex  gap-5 flex-col items-center lg:flex-row justify-center ">
         <div>
-          <img
+          <Image
             src={`http://localhost:5001${product.image}`}
             alt={product.name}
             className="lg:w-[500px] lg:h-[800px] w-[350px] h-[500px] object-cover mb-4"

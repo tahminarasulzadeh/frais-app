@@ -6,6 +6,7 @@ import { RootState } from '../store/store';
 import { setProducts, filterByCategory } from '../store/slices/productsSlice';
 import { addToCart } from '../store/slices/cartSlice';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export interface Product {
   _id: string;
@@ -66,7 +67,7 @@ export default function Products() {
           >
             <Link href={`/products/${product._id}`}>
               <div>
-                <img
+                <Image
                   src={`http://localhost:5001${product.image}`}
                   alt={product.name}
                   width={600}

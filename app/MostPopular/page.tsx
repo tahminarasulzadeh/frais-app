@@ -8,6 +8,7 @@ import { addToCart } from '../store/slices/cartSlice';
 import { setProducts } from '../store/slices/productsSlice';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function MostPopular() {
     const dispatch = useDispatch();
@@ -44,7 +45,7 @@ export default function MostPopular() {
                             <div key={product._id} className=" p-4 rounded ">
                                 <Link href={`/products/${product._id}`}>
                                     <div>
-                                        <img
+                                        <Image
                                             src={`http://localhost:5001${product.image || '/placeholder.png'}`}
                                             alt={product.name || 'Product Image'}
                                             className="w-full h-48 object-cover mb-2"

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 import { removeFromChart } from '../store/slices/cartSlice';
 import { RiDeleteBin5Line } from "react-icons/ri";
+import Image from 'next/image';
 
 export default function Cart() {
     const dispatch = useDispatch();
@@ -28,7 +29,7 @@ export default function Cart() {
                         {cart.map((item) => (
 
                             <div key={item._id} className='flex justify-between  items-center p-10'>
-                                <img src={`http://localhost:5001${item.image}`} alt={item.name} className='w-[150px] h-[100p]' />
+                                <Image src={`http://localhost:5001${item.image}`} alt={item.name} className='w-[150px] h-[100p]' />
                                 <div className=' flex flex-col gap-5'> 
                                 <p className='text-xl'>{item.name}</p>
                                 <p className='text-xl w-[350px]'>{item.description}</p>
