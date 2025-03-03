@@ -47,12 +47,12 @@ export default function Contact() {
             <div className="flex bg-[#D7D7CB] p-24 justify-center  min-h-[1200px] items-center lg:items-start gap-[35px] flex-col  w-full lg:w-1/2">
                 <p className="text-start md::justify-center text-[27px] xl:text-[44px]  font-thin leading-tight tracking-tight">
                     <strong>
-                        LET'S STAY <br /> CONNECTED
+                        LET&apos;S STAY <br /> CONNECTED
                     </strong>
                 </p>
 
                 <p className="text-[21px] w-[350px] text-center lg:text-start text-gray-700 font-thin tracking-wide">
-                    If you have questions or special inquiries, you're welcome to contact me or fill out this form
+                    If you have questions or special inquiries, you&apos;re welcome to contact me or fill out this form
                 </p>
                 <form className="flex flex-col justify-center items-center gap-[35px]">
                     <div className="flex justify-center  items-center lg:flex-row flex-col gap-[15px]">

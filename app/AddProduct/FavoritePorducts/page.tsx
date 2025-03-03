@@ -1,22 +1,15 @@
 'use client'
 
 // MostPopular.tsx
-import { useEffect, useState } from 'react';
-import { UseDispatch, useDispatch, useSelector} from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector} from 'react-redux';
 import { RootState } from '@/app/store/store';
-import { addToCart } from '@/app/store/slices/cartSlice';
+
 import { setProducts } from '@/app/store/slices/productsSlice';
 import Link from 'next/link';
 
 
-interface Product {
-    _id: string;
-    name: string;
-    description: string;
-    category: string;
-    price: number;
-    image: string;
-}
+
 export default function FavoriteProducts() {
     const dispatch = useDispatch();
     const {filteredProducts} = useSelector((state: RootState) => state.products

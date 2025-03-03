@@ -2,10 +2,6 @@
 
 import Image from "next/image"
 import img1 from '../../public/images/c837a6_4c4c7005d8554a2eb2ede74cd96cb8da~mv2.avif'
-import img2 from '../../public/parallax.avif'
-
-
-
 
 
 export default function OurHistory() {
@@ -16,7 +12,7 @@ export default function OurHistory() {
         <Image src={img1} alt="re-connecting humans to nature" className="w-[530px] h-[450px]" />
         <div className="flex flex-col gap-8 justify-start ">
           <p className="lg:text-[52px] text-[27px] text-gray-700 tracking-wide">RE-CONNECTING <br /> HUMANS TO <br /> NATURE</p>
-          <p className="lg:w-[450px] text-[21px] text-gray-400 tracking-wide">I'm a paragraph. Click here to add your own text  and edit me. Let your users get to know you.</p>
+          <p className="lg:w-[450px] text-[21px] text-gray-400 tracking-wide">I&apos;m a paragraph. Click here to add your own text  and edit me. Let your users get to know you.</p>
 
         </div>
       </div>
@@ -29,7 +25,7 @@ export default function OurHistory() {
             <h1 className=" w-full text-wrap text-start lg:text-3xl font-thin tracking-wider">MEET ALISON</h1>
 
             <p className="lg:w-[400px] w-[300px] text-wrap text-start text-md font-thin tracking-wider">
-              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+              I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I&apos;m a great place for you to tell a story and let your users know a little more about you.
             </p>
             <p className="lg:w-[400px] w-[300px] text-wrap text-start text-md font-thin tracking-wider">
               This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.

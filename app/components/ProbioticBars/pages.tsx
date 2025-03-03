@@ -17,7 +17,7 @@ export default function ProbioticBars() {
 
                 <div className="flex  lg:justify-start justify-center">
                     <p className="lg:text-start text-center w-[350px] lg:w-[400px]  mt-5 text-gray-700 text-[18px] font-extralight tracking-[1px] leading-[30px]">
-                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                        I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I&apos;m a great place for you to tell a story and let your users know a little more about you.
                     </p>
                 </div>
                 <div className="flex lg:justify-start justify-center">

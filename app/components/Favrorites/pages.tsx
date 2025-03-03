@@ -4,12 +4,12 @@ export default function Favorites() {
             <p className="text-center mt-7 text-gray-700 md:text-[40px] text-[25px] font-extralight tracking-wide leading-snug">SHOP OUR FAVORITES</p>
             <div className="relative  flex md:flex-row flex-col-reverse justify-center gap-9 mt-10 mx-auto">
                 <div className="flex flex-col mt-3 gap-[20px]">
-                    <p className=" text-center md:text-start mt-7 text-gray-700 text-[30px] font-extralight tracking-wide leading-snug">NATURE’S ESSENCE <br />
+                    <p className=" text-center md:text-start mt-7 text-gray-700 text-[30px] font-extralight tracking-wide leading-snug">NATURE&apos;S ESSENCE <br />
                         SCENTED CANDLES</p>
 
                     <div className="flex md:justify-start justify-center">
                         <p className="md:text-start text-center w-[350px] md:w-[400px]  mt-5 text-gray-700 text-[18px] font-extralight tracking-[1px] leading-[30px]">
-                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+                            I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I&apos;m a great place for you to tell a story and let your users know a little more about you.
                         </p>
                     </div>
 

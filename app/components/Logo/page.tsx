@@ -1,7 +1,5 @@
 import Link from "next/link"
 
-Link
-
 export default function Logo () {
     return (
         <Link href="/" className="w-[150px] p-2 h-full border-[3px] border-solid border-black">

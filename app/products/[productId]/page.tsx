@@ -7,10 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 
-import { addToCart } from '@/app/store/slices/cartSlice';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from '@/app/store/store';;
-import { setProducts } from '@/app/store/slices/productsSlice';
+
 
 
 interface Product {

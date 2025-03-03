@@ -9,15 +9,6 @@ import { setProducts } from '../store/slices/productsSlice';
 
 import Link from 'next/link';
 
-
-interface Product {
-    _id: string;
-    name: string;
-    description: string;
-    category: string;
-    price: number;
-    image: string;
-}
 export default function MostPopular() {
     const dispatch = useDispatch();
     const {filteredProducts} = useSelector(
