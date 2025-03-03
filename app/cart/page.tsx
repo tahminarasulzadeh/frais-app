@@ -7,7 +7,7 @@ import { removeFromChart } from '../store/slices/cartSlice';
 import { RiDeleteBin5Line } from "react-icons/ri";
 import Image from 'next/image';
 
-export default function Cart() {
+ function Cart() {
     const dispatch = useDispatch();
     const cart = useSelector((state: RootState) => state.cart.items)
 
@@ -52,3 +52,5 @@ export default function Cart() {
         </div>
     )
 }
+
+export default Cart

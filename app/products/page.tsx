@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import {  useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../store/store';
 import { setProducts, filterByCategory } from '../store/slices/productsSlice';
 import { addToCart } from '../store/slices/cartSlice';
@@ -18,21 +18,21 @@ export interface Product {
   popularity: number; // Add this if you want to filter by most popular
 }
 
-export default function Products() {
-  const dispatch  = useDispatch();
+function Products() {
+  const dispatch = useDispatch();
   const { filteredProducts, activeCategory } = useSelector(
-     (state: RootState) => state.products
+    (state: RootState) => state.products
   )
 
   useEffect(() => {
     fetch('http://localhost:5001/api/products')
-    .then((response) => response.json())
-    .then((data) => {
-      dispatch(setProducts(data))
-    });
+      .then((response) => response.json())
+      .then((data) => {
+        dispatch(setProducts(data))
+      });
   }, [dispatch])
 
- 
+
 
   return (
     <div className="p-4">
@@ -48,8 +48,8 @@ export default function Products() {
           <button
             key={category}
             className={`lg:px-4 lg:py-2 py-1 text-xs lg:text-md px-2 rounded ${activeCategory === category
-                ? 'bg-[#5E5E4A] text-white'
-                : 'bg-white border border-black hover:bg-[#5E5E4A] hover:text-white transition-all duration-300'
+              ? 'bg-[#5E5E4A] text-white'
+              : 'bg-white border border-black hover:bg-[#5E5E4A] hover:text-white transition-all duration-300'
               }`}
             onClick={() => dispatch(filterByCategory(category))}
           >
@@ -80,7 +80,7 @@ export default function Products() {
             <p className="text-gray-500">Category: {product.category}</p>
             <p className="text-green-500 font-bold">${product.price}</p>
             <button className="w-full p-2 mt-3 border-[1px] bg-white border-black hover:text-white hover:bg-[#5E5E4A] transition-all duration-300 ease-in"
-              onClick={() => dispatch(addToCart(product))} 
+              onClick={() => dispatch(addToCart(product))}
             >
               Add to Cart
             </button>
@@ -91,3 +91,5 @@ export default function Products() {
     </div>
   );
 }
+
+export default Products

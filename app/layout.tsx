@@ -8,7 +8,7 @@ import "./globals.css";
 import Header from './components/Header/page'; // Your header component
 import Footer from './components/Footer/page'; // Your footer component
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+ function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
@@ -21,3 +21,4 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   );
 }
+export default RootLayout;
